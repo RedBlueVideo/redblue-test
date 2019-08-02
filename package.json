@@ -1,0 +1,25 @@
+{
+  "name": "redblue-test",
+  "version": "1.0.0",
+  "description": "RedBlue Test",
+  "main": "index.js",
+  "author": "Hugh Guiney",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-hughx": "^0.0.2",
+    "karma": "^4.2.0",
+    "karma-browserify": "^6.1.0",
+    "karma-chrome-launcher": "^3.0.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^6.2.0",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "browserify": "^16.3.0"
+  }
+}
