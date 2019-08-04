@@ -12,11 +12,10 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@storybook/react": "^5.1.10",
-    "babel-loader": "^8.0.6",
-    "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-config-hughx": "^0.0.2"
+    "babel-loader": "^8.0.6"
   },
   "dependencies": {
+    "@skatejs/val": "^0.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

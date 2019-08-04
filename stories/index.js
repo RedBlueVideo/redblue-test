@@ -1,11 +1,14 @@
+// @jsx h
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button } from '@storybook/react/demo';
+import val from '@skatejs/val';
+import Hello from '../components/web-component.js';
 
-storiesOf('Button', module)
-  .add('with text', () => (
-    <Button>Hello Button</Button>
-  ))
-  .add('with emoji', () => (
-    <Button><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
-  ));
+const h = val(React.createElement);
+
+customElements.define('x-hello', Hello);
+
+storiesOf('Hello', module)
+  .add('with no name', () => <Hello />)
+  .add('with a name', () => <Hello>Daddy</Hello>);
