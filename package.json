@@ -10,13 +10,12 @@
     "storybook": "start-storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@storybook/react": "^5.1.10",
-    "babel-loader": "^8.0.6"
-  },
-  "dependencies": {
+    "@babel/core": "^7.6.2",
     "@skatejs/val": "^0.5.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+    "@storybook/react": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  },
+  "dependencies": {}
 }
