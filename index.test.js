@@ -1,7 +1,7 @@
-const expect = require( 'expect' );
+import Component from "./component.js";
 
 describe( 'test', () => {
   it( 'runs', () => {
-    expect( true ).toEqual( true );
+    expect( Component.is ).to.equal( 'component' );
   } );
 } );

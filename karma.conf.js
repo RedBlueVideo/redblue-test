@@ -8,20 +8,31 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'browserify'],
+    frameworks: [
+      // 'esm',
+      'mocha',
+      'chai',
+      'browserify'
+    ],
 
     plugins: [
+      // require.resolve('@open-wc/karma-esm'),
       require('karma-mocha'),
+      require('karma-chai'),
       require('karma-browserify'),
       require('karma-chrome-launcher')
     ],
 
     browserify: {
       debug: true,
+      plugin: [
+        [ require('esmify'), { /* ... options ... */ } ]
+      ]
     },
 
     // list of files / patterns to load in the browser
     files: [
+      // { pattern: '*.test.js', type: 'module' },
       '*.test.js',
     ],
 
@@ -32,6 +43,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      '*.test.js': [ 'browserify' ]
     },
 
     // test results reporter to use
@@ -54,7 +66,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['ChromeHeadless'],
+    browsers: ['Chrome'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
@@ -62,6 +74,14 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    // esm: {
+    //   // if you are using 'bare module imports' you will need this option
+    //   nodeResolve: true,
+    //   // set compatibility mode to all
+    //   compatibility: 'all',
+    //   // compatibility: 'none',
+    // },
   } )
 }
