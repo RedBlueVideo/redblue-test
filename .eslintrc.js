@@ -5,19 +5,20 @@ module.exports = {
   "rules": {
     "import/extensions": ["error", "ignorePackages"]
   },
-  // "overrides": [
-  //   {
-  //     "files": [
-  //       "karma.conf.js",
-  //       "**/*.test.js"
-  //     ],
-  //     "env": {
-  //       "browser": true,
-  //       "node": true,
-  //     },
-  //     "rules": {
-  //       "import/no-extraneous-dependencies": "off"
-  //     }
-  //   }
-  // ]
+  "overrides": [
+    {
+      "files": [
+        "karma.conf.js",
+        "**/*.test.js",
+        "**/*.stories.js"
+      ],
+      "env": {
+        // "browser": true,
+        "node": true,
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
 };

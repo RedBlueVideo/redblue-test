@@ -31,16 +31,27 @@
     "lit-html": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@open-wc/demoing-storybook": "^0.3.0",
     "@open-wc/eslint-config": "^1.0.0",
     "@open-wc/prettier-config": "^0.1.10",
     "@open-wc/testing": "^2.0.0",
     "@open-wc/testing-karma": "^3.0.0",
     "@open-wc/testing-karma-bs": "^1.0.0",
+    "@skatejs/val": "^0.5.0",
+    "@storybook/polymer": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "babel-loader": "^8.0.6",
     "es-dev-server": "^1.5.0",
     "eslint": "^6.1.0",
+    "eslint-config-hughx": "0.0.2",
     "husky": "^3.0.7",
     "lint-staged": "^9.4.0",
+    "raw-loader": "^3.1.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-scripts": "^3.1.2",
     "webpack-merge": "^4.1.5"
   },
   "eslintConfig": {
