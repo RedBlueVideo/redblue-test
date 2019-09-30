@@ -1,9 +1,1 @@
-class CustomElement extends HTMLElement {
-  // constructor() {
-  //   super();
-  // }
-
-  connectedCallback() {
-    console.log( 'Connected!' );
-  }
-}
+export { MyComponent } from './src/MyComponent.js';
